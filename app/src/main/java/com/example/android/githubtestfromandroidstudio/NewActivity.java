@@ -1,19 +1,19 @@
 package com.example.android.githubtestfromandroidstudio;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class NewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_new);
     }
     public void newActivity(View view){
-        Intent newActivityIntent = new Intent(MainActivity.this, NewActivity.class);
+        Intent newActivityIntent = new Intent(NewActivity.this, ThirdActivity.class);
         startActivity(newActivityIntent);
     }
 }
